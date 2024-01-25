@@ -1,0 +1,134 @@
+> hi clear
+
+" group           ctermfg   ctermbg   guifg     guibg     attr
+Normal            white     black
+NormalFloat       white     black
+NonText           white
+
+Cursor            black     blue
+
+CursorColumn      -         black_b
+CursorLine        -         black_b
+
+LineNr            black_b   black
+CursorLineNr      white
+
+DiffAdd           green
+DiffChange        yellow
+DiffDelete        red
+DiffText          blue
+
+IncSearch         black     yellow
+Search            black     yellow
+
+ErrorMsg          white
+ModeMsg           white
+MoreMsg           white
+WarningMsg        red
+Question          magenta
+
+Pmenu             white     black_b
+PmenuSel          black     yellow
+PmenuSbar         -         black_b
+PmenuThumb        -         white
+
+SpellBad          red
+SpellCap          yellow
+SpellLocal        yellow
+SpellRare         yellow
+
+StatusLine        yellow    black     -         -         underline
+StatusLineNC      black_b   black     -         -         underline
+TabLine           black_b   black     -         -         underline
+TabLineFill       black_b   black     -         -         underline
+TabLineSel        yellow    black     -         -         underline
+
+Visual            -         black_b
+VisualNOS         -         black_b
+
+ColorColumn       -         black_b
+Conceal           white
+Directory         blue
+VertSplit         black     black_b
+> set fillchars+=vert:│
+Folded            black_b   black
+
+FoldColumn        white
+SignColumn        white
+MatchParen        blue_b    black_b   -         -         underline
+SpecialKey        white
+Title             green
+WildMenu          black     yellow    -         -         underline
+
+" Syntax colors
+Comment           black_b
+Constant          cyan
+String            green
+Character         green
+Number            yellow
+Boolean           yellow
+Float             yellow
+
+Identifier        red
+Function          blue
+Statement         magenta
+
+Conditional       magenta
+Repeat            magenta
+Label             magenta
+Operator          white
+Keyword           red
+Exception         magenta
+
+PreProc           yellow
+Include           blue
+Define            magenta
+Macro             magenta
+PreCondit         yellow
+
+Type              yellow
+StorageClass      yellow
+Structure         yellow
+Typedef           yellow
+
+Special           blue
+SpecialChar       white
+Tag               white
+Delimiter         white
+SpecialComment    white
+Debug             white
+Underlined        white
+Ignore            white
+Error             red       black_b
+Todo              magenta
+
+" GitGutter Plugin
+GitGutterAdd            green     black_b
+GitGutterDelete         red       black_b
+GitGutterChange         yellow    black_b
+GitGutterChangeDelete   red       black_b
+
+" Fugitive Plugin
+diffAdded         green
+diffRemoved       red
+
+" Git Plugin
+gitcommitComment        white
+gitcommitUnmerged       red
+gitcommitOnBranch       white
+gitcommitBranch         magenta
+gitcommitDiscardedType  red
+gitcommitSelectedType   green
+gitcommitHeader         white
+gitcommitUntrackedFile  cyan
+gitcommitDiscardedFile  red
+gitcommitSelectedFile   green
+gitcommitUnmergedFile   yellow
+gitcommitFile           white
+> hi link gitcommitNoBranch gitcommitBranch
+> hi link gitcommitUntracked gitcommitComment
+> hi link gitcommitDiscarded gitcommitComment
+> hi link gitcommitSelected gitcommitComment
+> hi link gitcommitDiscardedArrow gitcommitDiscardedFile
+> hi link gitcommitSelectedArrow gitcommitSelectedFile
+> hi link gitcommitUnmergedArrow gitcommitUnmergedFile
